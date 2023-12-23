@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Вычитание чисел</title>
+	<script>
+		function minus() {
+			var result;
+			var minuend = Number(document.getElementById("minuend").value);
+			var subtrahend = Number(document.getElementById("subtrahend").value);
+			result = minuend - subtrahend
+			document.getElementById("result").innerHTML = result
+		}
+	</script>
+</head>
+<body>
+	<!-- поле ввода первого числа -->
+	<input id="minuend" />
+
+    <button>-</button>
+
+	<!-- поле ввода второго числа -->
+	<input id="subtrahend" />
+	<br>
+
+	<!-- кнопка для рассчётов -->
+	<button onclick="minus()">Посчитать</button>
+	<p id="result"></p>
+</body>
+</html>

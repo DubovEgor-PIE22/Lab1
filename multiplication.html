@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Умножение чисел</title>
+	<script>
+		function multiplication() {
+			var result;
+			var multiplier1 = Number(document.getElementById("multiplier1").value);
+			var multiplier2 = Number(document.getElementById("multiplier2").value);
+			result = multiplier1 * multiplier2
+			document.getElementById("result").innerHTML = result
+		}
+	</script>
+</head>
+<body>
+	<!-- поле ввода первого числа -->
+	<input id="multiplier1" />
+
+    <button>*</button>
+
+	<!-- поле ввода второго числа -->
+	<input id="multiplier2" />
+	<br>
+
+	<!-- кнопка для рассчётов -->
+	<button onclick="multiplication()">Посчитать</button>
+	<p id="result"></p>
+</body>
+</html>

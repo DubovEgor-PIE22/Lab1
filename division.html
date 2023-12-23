@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Деление чисел</title>
+	<script>
+		function division() {
+			var result;
+			var divisible = Number(document.getElementById("divisible").value);
+			var divider = Number(document.getElementById("divider").value);
+			result = divisible / divider
+			document.getElementById("result").innerHTML = result
+		}
+	</script>
+</head>
+<body>
+	<!-- поле ввода первого числа -->
+	<input id="divisible" />
+
+    <button>:</button>
+
+	<!-- поле ввода второго числа -->
+	<input id="divider" />
+	<br>
+
+	<!-- кнопка для рассчётов -->
+	<button onclick="division()">Посчитать</button>
+	<p id="result"></p>
+</body>
+</html>

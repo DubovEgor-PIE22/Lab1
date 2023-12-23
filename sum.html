@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Сложение чисел</title>
+	<script>
+		function plus() {
+			var result;
+			var summand1 = Number(document.getElementById("summand1").value);
+			var summand2 = Number(document.getElementById("summand2").value);
+			result = summand1 + summand2
+			document.getElementById("result").innerHTML = result
+		}
+	</script>
+</head>
+<body>
+	<!-- поле ввода первого числа -->
+	<input id="summand1" />
+
+    <button>+</button>
+
+	<!-- поле ввода второго числа -->
+	<input id="summand2" />
+	<br>
+
+	<!-- кнопка для рассчётов -->
+	<button onclick="plus()">Посчитать</button>
+	<p id="result"></p>
+</body>
+</html>
